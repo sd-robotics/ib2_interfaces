@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.8)
-project(ib2_interfaces)
+project(ib2_msgs)
 
 if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -Wpedantic)
@@ -7,12 +7,14 @@ endif()
 
 # find dependencies
 find_package(ament_cmake REQUIRED)
+find_package(action_msgs REQUIRED)
+find_package(example_interfaces REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(std_msgs REQUIRED)
-find_package(example_interfaces REQUIRED)
 find_package(builtin_interfaces REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 
+# Declare message files
 set(msg_files
   "msg/AliveStatus.msg"
   "msg/BatteryChargeInfo.msg"
@@ -40,6 +42,8 @@ set(msg_files
   "msg/Slam.msg"
   "msg/SystemStatus.msg"
 )
+
+# Declare service files
 set(srv_files
   "srv/Dock.srv"
   "srv/DumpRosParams.srv"
@@ -55,18 +59,24 @@ set(srv_files
   "srv/SwitchPower.srv"
   "srv/UpdateParameter.srv"
 )
+
+# Declare action files
 set(action_files
   "action/CtlCommand.action"
   "action/NavigationStartUp.action"
 )
 
+# Generate interfaces
 rosidl_generate_interfaces(${PROJECT_NAME}
   ${msg_files}
   ${srv_files}
   ${action_files}
-  DEPENDENCIES geometry_msgs std_msgs example_interfaces builtin_interfaces
+  DEPENDENCIES std_msgs geometry_msgs action_msgs example_interfaces builtin_interfaces
   ADD_LINTER_TESTS
 )
+
+# Package dependencies for other packages
+ament_export_dependencies(rosidl_default_runtime)
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
