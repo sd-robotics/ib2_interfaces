@@ -2,4 +2,4 @@
 bool maintenance_on
 ---
 # response
-Mode mode
+ib2_interfaces/Mode mode

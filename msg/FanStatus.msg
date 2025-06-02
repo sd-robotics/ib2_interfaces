@@ -1,3 +1,3 @@
 std_msgs/Header header
 example_interfaces/Float64MultiArray duty
-PowerStatus current_power
+ib2_interfaces/PowerStatus current_power

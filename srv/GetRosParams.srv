@@ -2,4 +2,4 @@
 string[] ids
 ---
 # response
-RosParam[] params   # param.type is Empty string: ''
+ib2_interfaces/RosParam[] params   # param.type is Empty string: ''

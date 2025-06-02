@@ -1,3 +1,3 @@
 # monitored alive status msg
-AliveStatus[] topic_statuses
-AliveStatus[] service_statuses
+ib2_interfaces/AliveStatus[] topic_statuses
+ib2_interfaces/AliveStatus[] service_statuses

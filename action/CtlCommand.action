@@ -1,6 +1,6 @@
 #goal
 geometry_msgs/PoseStamped target  # time at sending, target position and orientation
-CtlStatusType type                # control command type
+ib2_interfaces/CtlStatusType type                # control command type
 ---
 #result
 uint8 TERMINATE_SUCCESS = 0

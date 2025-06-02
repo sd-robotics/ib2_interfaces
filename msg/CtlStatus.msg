@@ -2,4 +2,4 @@
 geometry_msgs/PoseStamped pose
 geometry_msgs/Twist twist
 geometry_msgs/Vector3 a
-CtlStatusType type
+ib2_interfaces/CtlStatusType type
