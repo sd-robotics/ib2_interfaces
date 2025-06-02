@@ -1,6 +1,6 @@
 # request
-ib2_interfaces/RosParam[] params
+ib2_msgs/RosParam[] params
 ---
 # response
-ib2_interfaces/RosParam[] success_params
+ib2_msgs/RosParam[] success_params
 bool success_all

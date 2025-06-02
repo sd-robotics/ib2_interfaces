@@ -1,5 +1,5 @@
 # request
-ib2_interfaces/RosParam param
+ib2_msgs/RosParam param
 ---
 # response
 bool success

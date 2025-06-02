@@ -1,1 +1,1 @@
-ib2_interfaces/RosParam[] params
+ib2_msgs/RosParam[] params
