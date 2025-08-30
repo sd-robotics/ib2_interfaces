@@ -15,6 +15,7 @@ find_package(rosidl_default_generators REQUIRED)
 
 set(msg_files
   "msg/AliveStatus.msg"
+  "msg/Attitude.msg"
   "msg/BatteryChargeInfo.msg"
   "msg/CtlProfile.msg"
   "msg/CtlStatus.msg"
