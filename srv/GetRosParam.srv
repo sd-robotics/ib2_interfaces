@@ -2,5 +2,5 @@
 string id
 ---
 # response
-ib2_interfaces/RosParam param      # param.type is Empty string: ''
+ib2_msgs/RosParam param      # param.type is Empty string: ''
 bool success

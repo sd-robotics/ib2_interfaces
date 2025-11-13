@@ -1,6 +1,6 @@
 # request
-ib2_interfaces/Mode mode           # Operation or Standby
+ib2_msgs/Mode mode           # Operation or Standby
 ---
 # response type
 bool success
-ib2_interfaces/Mode mode           # result
+ib2_msgs/Mode mode           # result

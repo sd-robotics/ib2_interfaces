@@ -1,5 +1,5 @@
 # Device Power cotrol service
-ib2_interfaces/PowerStatus power
+ib2_msgs/PowerStatus power
 ---
 # response
-ib2_interfaces/PowerStatus current_power
+ib2_msgs/PowerStatus current_power
